@@ -2104,14 +2104,20 @@ input, select, textarea {
 	}
 
 	#promo-wrapper {
-		position: relative;
-		background-image: url("images/overlay.png"), url("../../images/tempdec.png");
-		background-size: 192px 192px, cover;
-		background-position: top left, center center;
-		color: #fff;
-		text-align: center;
-		padding: 6em 0 6em 0;
+	background-color: #111;
+	background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0px, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 4px);
+	color: #fff;
+	overflow: hidden;
+	text-align: center;
+	padding: 6em 0 6em 0;
 	}
+
+	#promo-wrapper section {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	}
+
 
 	#footer-wrapper {
 		background-color: #111 !important;
@@ -2334,7 +2340,7 @@ input, select, textarea {
 		#promo h2 {
 			color: #fff;
 			display: inline-block;
-			margin-right: 1em;
+			margin: 0 auto;
 			font-size: 1.75em;
 		}
 
@@ -2393,6 +2399,7 @@ input, select, textarea {
 		padding-top: 4em;
 		margin-top: 6em;
 	}
+
 
 /* Normal */
 
@@ -2652,7 +2659,7 @@ input, select, textarea {
 .whoami-full {
 	width: 100%;
 	background-color: #f5f5f5; /* Cambia si prefieres otro color */
-	padding: 4rem 1rem;
+	padding: 1rem 1rem;
 	text-align: center;
   }
   
